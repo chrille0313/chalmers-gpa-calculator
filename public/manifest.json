@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Chalmers GPA Calculator",
   "description": "Displays weighted and simple grade averages directly on mex.portal.chalmers.se and in the extension popup.",
-  "version": "0.0.0",
+  "version": "1.0.1",
   "action": {
     "default_title": "Show GPA summary",
     "default_popup": "popup.html"
