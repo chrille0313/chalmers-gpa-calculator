@@ -52,6 +52,24 @@ const popupRoot = (() => {
 })();
 const refreshButton = document.getElementById('popup-refresh') as HTMLButtonElement | null;
 
+const escapeHtml = (value: string): string =>
+  value.replace(/[&<>"']/g, (char) => {
+    switch (char) {
+      case '&':
+        return '&amp;';
+      case '<':
+        return '&lt;';
+      case '>':
+        return '&gt;';
+      case '"':
+        return '&quot;';
+      case "'":
+        return '&#39;';
+      default:
+        return char;
+    }
+  });
+
 renderStatus('Loading transcript data…');
 refreshButton?.addEventListener('click', () => {
   void fetchStats();
@@ -91,7 +109,7 @@ async function fetchStats(): Promise<void> {
 }
 
 function renderStatus(message: string): void {
-  popupRoot.innerHTML = `<p class="popup__status">${message}</p>`;
+  popupRoot.innerHTML = `<p class="popup__status">${escapeHtml(message)}</p>`;
 }
 
 function renderStats(stats: StatsPayload, status: string): void {
@@ -105,14 +123,15 @@ function renderStats(stats: StatsPayload, status: string): void {
     stats.skipped.length > 0
       ? stats.skipped
           .map((entry) => {
-            const examples = entry.examples.length ? ` (ex: ${entry.examples.join(', ')})` : '';
+            const escapedExamples = entry.examples.map((example) => escapeHtml(example));
+            const examples = escapedExamples.length ? ` (ex: ${escapedExamples.join(', ')})` : '';
             return `<li>${SKIP_REASON_COPY[entry.reason]}: ${entry.count}${examples}</li>`;
           })
           .join('')
       : '<li>All graded rows are included.</li>';
 
   popupRoot.innerHTML = `
-    <p class="popup__status">${status}</p>
+    <p class="popup__status">${escapeHtml(status)}</p>
     <div class="metrics">
       <div class="metric">
         <p class="metric__label">Weighted average</p>
