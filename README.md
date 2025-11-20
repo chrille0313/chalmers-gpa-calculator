@@ -35,6 +35,12 @@ Chalmers uses criterion-referenced assessments with two scales: the numeric scal
 2. Run `npm run build` to emit the extension into `extension/`.
 3. Load `extension/` as an unpacked extension in `chrome://extensions`.
 
+## Usage
+
+1. Make sure the extension is enabled in Chrome (via the unpacked build or Web Store install).
+2. Navigate to [mex.portal.chalmers.se](https://mex.portal.chalmers.se) and sign in.
+3. Open the **Achievements** tab (Swedish: _Prestationer_). The GPA card will inject above the course table, and the popup will show the same stats.
+
 ## Development
 
 - Source TypeScript lives in `src/`. Run `npm run build` after making changes, then refresh the extension in `chrome://extensions`.
