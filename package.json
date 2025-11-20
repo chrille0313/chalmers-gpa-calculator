@@ -1,24 +1,28 @@
 {
-  "name": "improved-repo-workflow",
+  "name": "chalmers-gpa-calculator",
   "version": "0.0.0-development",
-  "description": "",
-  "author": "",
+  "description": "A chrome extension for calculating your GPA at Chalmers University of Technology",
+  "author": "chrille0313",
   "type": "module",
   "scripts": {
     "prepare": "husky",
+    "build": "node ./scripts/build.mjs",
     "lint": "npm run lint:scripts && npm run lint:styles",
     "lint:fix": "npm run lint:scripts:fix && npm run lint:styles:fix",
-    "lint:scripts": "",
-    "lint:scripts:fix": "",
+    "lint:scripts": "tsc --noEmit --project tsconfig.json",
+    "lint:scripts:fix": "tsc --noEmit --project tsconfig.json",
     "lint:styles": "prettier --check .",
     "lint:styles:fix": "prettier --write ."
   },
   "devDependencies": {
     "@commitlint/cli": "^19.6.0",
     "@commitlint/config-conventional": "^19.6.0",
+    "@semantic-release/github": "^11.0.1",
+    "@types/chrome": "^0.0.266",
+    "esbuild": "^0.27.0",
     "husky": "^9.1.7",
     "prettier": "^3.4.1",
     "semantic-release": "^24.2.0",
-    "@semantic-release/github": "^11.0.1"
+    "typescript": "^5.6.3"
   }
 }
