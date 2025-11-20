@@ -10,6 +10,7 @@ yarn-error.log*
 # Build output
 extension/
 dist/
+release/
 coverage/
 *.tsbuildinfo
 .rpt2_cache/

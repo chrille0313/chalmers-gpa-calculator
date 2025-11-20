@@ -5,6 +5,17 @@
   "plugins": [
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
-    "@semantic-release/github"
+    [
+      "@semantic-release/exec",
+      {
+        "prepareCmd": "npm run build && node ./scripts/archive-extension.mjs ${nextRelease.version}"
+      }
+    ],
+    [
+      "@semantic-release/github",
+      {
+        "assets": "release/chalmers-gpa-calculator-*.zip"
+      }
+    ]
   ]
 }
