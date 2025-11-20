@@ -22,15 +22,18 @@ Chalmers uses criterion-referenced assessments with two scales: the numeric scal
 
 ## Installation
 
-- **Prebuilt**:
-  1. Download the latest `chalmers-gpa-calculator-<version>.zip` from the [GitHub Releases](https://github.com/chrille0313/chalmers-gpa-calculator/releases).
-  2. Unzip it to a convenient folder.
-  3. In Chrome, open `chrome://extensions`, enable _Developer mode_, and choose _Load unpacked_.
-  4. Select the extracted folder to load the extension.
-- **Build yourself**:
-  1. Install dependencies with `npm install`.
-  2. Run `npm run build` to emit the extension into `extension/`.
-  3. Load `extension/` as an unpacked extension in `chrome://extensions`.
+### Prebuilt
+
+1. Download the latest `chalmers-gpa-calculator-<version>.zip` from the [GitHub Releases](https://github.com/chrille0313/chalmers-gpa-calculator/releases).
+2. Unzip it to a convenient folder.
+3. In Chrome, open `chrome://extensions`, enable _Developer mode_, and choose _Load unpacked_.
+4. Select the extracted folder to load the extension.
+
+### Build yourself
+
+1. Install dependencies with `npm install`.
+2. Run `npm run build` to emit the extension into `extension/`.
+3. Load `extension/` as an unpacked extension in `chrome://extensions`.
 
 ## Development
 
