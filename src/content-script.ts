@@ -507,7 +507,7 @@
       course: findIndex(headers, ['kurs', 'course']),
       courseName: findIndex(headers, ['kursnamn', 'course name']),
       credits: findIndex(headers, ['hp', 'hogskolepoang', 'credits']),
-      grade: findIndex(headers, ['resultat', 'betyg', 'grade'])
+      grade: findIndex(headers, ['resultat', 'betyg', 'grade', 'result'])
     };
   }
 
@@ -532,7 +532,7 @@
     const tables = Array.from(document.querySelectorAll('table')).filter(
       (element): element is HTMLTableElement => element instanceof HTMLTableElement
     );
-    const keywords = ['kurs', 'hp', 'resultat'];
+    const keywords = ['kurs', 'hp', 'resultat', 'course', 'credits', 'result'];
     let bestTable: HTMLTableElement | null = null;
     let bestScore = -1;
 
