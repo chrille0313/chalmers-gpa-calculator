@@ -20,7 +20,7 @@
       "128": "icons/128.jpg"
     }
   },
-  "permissions": ["tabs"],
+  "permissions": ["activeTab"],
   "host_permissions": ["https://mex.portal.chalmers.se/*"],
   "content_scripts": [
     {
