@@ -10,10 +10,10 @@
 
 body {
   margin: 0;
-  padding: 12px;
-  min-width: 240px;
+  padding: 16px;
+  min-width: 260px;
   background: #f3f7fb;
-  color: #111;
+  color: #07152a;
 }
 
 .popup {
@@ -22,78 +22,31 @@ body {
   gap: 12px;
 }
 
-.popup__refresh {
-  width: 100%;
-  margin-top: 12px;
-  padding: 8px 12px;
-  font-size: 0.9rem;
-  border-radius: 6px;
-  border: 1px solid #0b79d0;
-  background: #fff;
-  color: #0b79d0;
-  cursor: pointer;
-  transition: background 0.2s ease;
-}
-
-.popup__refresh:hover {
-  background: #e5f2fc;
-}
-
-.metrics {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 8px;
-}
-
-.metric {
-  padding: 8px;
-  border-radius: 8px;
-  background: #fff;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
-}
-
-.metric__label {
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  color: #5c6c7f;
+.popup__title {
   margin: 0;
-}
-
-.metric__value {
-  margin: 4px 0 0;
   font-size: 1.2rem;
   font-weight: 600;
   color: #032541;
 }
 
-.counts {
-  font-size: 0.85rem;
-  line-height: 1.4;
-  background: #fff;
+.popup__text {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.popup__button {
+  margin-top: 8px;
+  padding: 10px 12px;
+  font-size: 0.95rem;
   border-radius: 8px;
-  padding: 8px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  border: none;
+  background: #0b79d0;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s ease;
 }
 
-.skipped {
-  font-size: 0.8rem;
-  color: #5c6c7f;
-}
-
-.skipped ul {
-  padding-left: 16px;
-  margin: 4px 0 0;
-}
-
-.error {
-  color: #a51414;
-  font-size: 0.9rem;
-  margin: 0;
-}
-
-.timestamp {
-  font-size: 0.7rem;
-  color: #5c6c7f;
-  margin: 0;
+.popup__button:hover {
+  background: #095f9f;
 }

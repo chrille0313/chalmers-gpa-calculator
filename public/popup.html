@@ -7,11 +7,16 @@
   </head>
   <body>
     <main id="popup-root" class="popup">
-      <p class="popup__status">Loading transcript data…</p>
+      <h1 class="popup__title">Chalmers GPA Calculator</h1>
+      <p class="popup__text">
+        To view your GPA summary, visit <strong>mex.portal.chalmers.se</strong>, sign in, and open
+        the <em>Achievements / Prestationer</em> tab. The extension will automatically inject the
+        GPA card above the course table.
+      </p>
+      <button id="popup-open-mex" class="popup__button" type="button">
+        Open mex.portal.chalmers.se
+      </button>
     </main>
-    <button id="popup-refresh" class="popup__refresh" type="button" aria-label="Refresh stats">
-      ↻
-    </button>
     <script type="module" src="popup.js"></script>
   </body>
 </html>
