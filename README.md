@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="public/icons/Icon.png" alt="Chalmers GPA Calculator icon" width="128" />
+  <img src="public/icons/Icon.png" alt="Chalmers GPA Calculator icon" width="256" />
 </p>
 
 # Chalmers GPA Calculator
