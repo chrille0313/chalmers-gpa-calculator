@@ -44,7 +44,7 @@ Chalmers uses criterion-referenced assessments with two scales: the numeric scal
 
 1. Make sure the extension is enabled in Chrome (via the unpacked build or Web Store install).
 2. Navigate to [mex.portal.chalmers.se](https://mex.portal.chalmers.se) and sign in.
-3. Open the **Achievements** tab (Swedish: _Prestationer_). The GPA card will inject above the course table, and the popup will show the same stats.
+3. Open the **Achievements** tab (Swedish: _Prestationer_). The GPA card will inject above the course table, and the popup offers quick instructions plus a button to open the correct page.
 
 ## Development
 
