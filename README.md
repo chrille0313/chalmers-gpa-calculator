@@ -1,4 +1,8 @@
-# Chalmers GPA Calculator <img src="public/icons/Icon.png" alt="Chalmers GPA Calculator icon" width="64" height="64" style="vertical-align: middle" />
+<p align="center">
+  <img src="public/icons/Icon.png" alt="Chalmers GPA Calculator icon" width="128" />
+</p>
+
+# Chalmers GPA Calculator
 
 Chrome extension that reads the course table on [mex.portal.chalmers.se](https://mex.portal.chalmers.se) and shows your weighted and simple grade averages directly on the page. The extension popup also provides quick instructions and a link to the correct view.
 
