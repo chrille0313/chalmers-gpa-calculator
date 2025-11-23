@@ -1,6 +1,6 @@
 # Chalmers GPA Calculator
 
-Chrome extension that reads the course table on [mex.portal.chalmers.se](https://mex.portal.chalmers.se) and shows your weighted and simple grade averages directly on the page and in an extension popup.
+Chrome extension that reads the course table on [mex.portal.chalmers.se](https://mex.portal.chalmers.se) and shows your weighted and simple grade averages directly on the page. The extension popup also provides quick instructions and a link to the correct view.
 
 <div align="center">
   <img src="public/preview.png" alt="Preview" />
